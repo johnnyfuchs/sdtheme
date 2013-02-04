@@ -4,6 +4,7 @@
   <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
   <title><?php wp_title(' | ', true, 'right'); ?></title>
   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -12,7 +13,7 @@
     <div id="branding">
       <div id="site-title">
         <?php if ( is_singular() ) {} else {echo '<h1>';} ?>
-        <a href="<?php echo home_url() ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a>
+        <!-- <a href="<?php echo home_url() ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a> -->
         <?php if ( is_singular() ) {} else {echo '</h1>';} ?>
       </div>
       <p id="site-description"><?php bloginfo( 'description' ) ?></p>
