@@ -36,7 +36,7 @@ body, html {
   font-family: 'Open Sans', serif;
   font-size: 14px;
   font-weight: 400;
-  height: 100%;
+  min-height: 800px;
 }
 
 /* BODY/LAYOUT */
@@ -46,7 +46,7 @@ body, html {
   margin: 0 auto;
   border-left:  2px #20293F solid;
   border-right: 2px #20293F solid;
-  padding: 0 15px;
+  padding: 0 10px;
   height: 100%;
   overflow:hidden;
   background-color:#313638;
@@ -54,16 +54,17 @@ body, html {
           box-shadow:  0px 0px 20px 3px rgba(0, 0, 0, 1);
 }
 
+#content {
+  position: relative;
+  padding: 15px;
+}
+
 /* HEADER */
 
-header {
- margin-bottom: 30px;
+nav {
+  margin: 80px  0px 0px 300px ;
 }
 
-nav {
-  margin-left: 350px;
-  margin-top: -40px;
-}
 
 nav li a:active,
 nav li a:visited,
@@ -90,7 +91,7 @@ nav li a:hover { color: #fff; }
  * THINGS I'M HIDING         *
 ******************************/
 
-
+#site-title { display: none; }        /* DESCRIPTION AND TITLE */
 #site-description { display: none; }  /* DESCRIPTION AND TITLE */
 #comments { display: none; }          /* COMMENTS */
 #search { display: none; }            /* SEARCH */
@@ -98,8 +99,8 @@ nav li a:hover { color: #fff; }
 .entry-title { display: none; }       /* ENTRY TITLE */
 
 #quick-contact {
-  width: 680px;
-  font-size: 11px;
+  width: 700px;
+  font-size: 10px;
   margin-left: auto;
   margin-right: auto;
   padding: 2px;
@@ -108,25 +109,35 @@ nav li a:hover { color: #fff; }
   border-bottom: 1px #2c3133 solid;
 }
 
-#quick-contact .addr  { margin-left: 10px; }
-#quick-contact .phone { margin-left: 10px; }
-#quick-contact .email { margin-left: 10px; }
+#quick-contact .addr  { margin-left: 30px; }
+#quick-contact .phone { margin-left: 30px; }
+#quick-contact .email { margin-left: 30px; }
 
-#quick-contact-shadow {
-  margin-top: 20px;
-  padding: 12px;
-}
+#quick-contact-shadow { padding: 12px; }
 
 
 
+/******************************
+ * SLIDESHOW STYLES          *
+******************************/
 
-
-
+.slideshow     { display: block; position:relative; }
+.slideshow img { position:absolute; top:0; left:0; z-index:8; opacity:0.0; }
+.slideshow img.active { z-index:10; opacity:1.0; } 
+.slideshow img.prev-active { z-index:9; } 
 
 
 /******************************
  * RANDOM EFFECTS AND SHIT    * 
 ******************************/
+
+
+/* clearfix */
+.clear:before,
+.clear:after { content:""; display:table; }
+.clear:after { clear:both; }
+.clear { zoom:1; }
+/* ^^ For IE 6/7 (trigger hasLayout) */
 
 
 /* custom image borders */
@@ -138,6 +149,8 @@ nav li a:hover { color: #fff; }
             border-radius: 4px;
     padding:3px;
 }
+
+.rounded-img div img, /* accomodate slideshow */
 .rounded-img img {
     margin:0;
     vertical-align: bottom;
