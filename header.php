@@ -5,7 +5,6 @@
   <title><?php wp_title(' | ', true, 'right'); ?></title>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-  <script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
 
   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 

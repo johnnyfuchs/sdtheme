@@ -47,11 +47,11 @@ body, html {
   border-left:  2px #20293F solid;
   border-right: 2px #20293F solid;
   padding: 0 10px;
-  height: 100%;
   overflow:hidden;
   background-color:#313638;
   -webkit-box-shadow:  0px 0px 20px 3px rgba(0, 0, 0, 1);
           box-shadow:  0px 0px 20px 3px rgba(0, 0, 0, 1);
+  min-height: 800px;
 }
 
 #content {
@@ -78,6 +78,8 @@ nav li a {
 }
 nav li a:hover { color: #fff; }
 
+
+
 #branding {
  margin-top:10px;
  height:120px;
@@ -85,6 +87,23 @@ nav li a:hover { color: #fff; }
  background-image: url('images/logo.png');
  background-repeat: no-repeat;
 }
+
+
+
+
+footer{
+  margin-top: 100px;
+}
+
+footer #copyright {
+  font-size: 10px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+
+
+
 
 
 /******************************
