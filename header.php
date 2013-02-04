@@ -5,6 +5,7 @@
   <title><?php wp_title(' | ', true, 'right'); ?></title>
   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+  <!--[if gte IE 9]> <style type="text/css"> .radial-shadow { filter: none; } </style> <![endif]-->
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -24,5 +25,13 @@
       </div>
       <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
     </nav>
+    <div id="quick-contact-shadow" class="radial-shadow">
+      <div id="quick-contact">
+        <span class="corp"> SD Consulting Group, LLC </span>
+        <span class="addr"> 769 Cherokee Avenue, Saint Paul, MN 55107 </span>
+        <span class="phone"> 612.203.7366 </span>
+        <span class="email"> Shane.sparks@sd-consultinggroup.com </span>
+      </div>
+    </div>
   </header>
   <div id="container">

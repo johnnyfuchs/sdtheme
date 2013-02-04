@@ -25,12 +25,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* DEFAULT COLORS STYLES */
 body, html {
   /*
-  background-image: url('images/brownforest.png');
+  background-image: url('images/gravy.png');
   */
   /*
   background-image: url('images/greytxture.png');
   */
-  background-image: url('images/gravy.png');
+  background-image: url('images/brownforest.png');
   color: #eee;
   line-height: 17px;
   font-family: 'Open Sans', serif;
@@ -49,7 +49,7 @@ body, html {
   padding: 0 15px;
   height: 100%;
   overflow:hidden;
-  background-color:#404749;
+  background-color:#313638;
   -webkit-box-shadow:  0px 0px 20px 3px rgba(0, 0, 0, 1);
           box-shadow:  0px 0px 20px 3px rgba(0, 0, 0, 1);
 }
@@ -69,38 +69,64 @@ nav li a:active,
 nav li a:visited,
 nav li a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   color: #ccc;
-  letter-spacing:1px;
   font-weight: 400;
   text-shadow: 1px 1px 1px #000;
        filter: dropshadow(color=#000, offx=1, offy=1);
 }
-
-nav li a:hover {
-  color: #fff;
-}
+nav li a:hover { color: #fff; }
 
 #branding {
- height:150px;
+ margin-top:10px;
+ height:120px;
  overflow: hidden;
  background-image: url('images/logo.png');
  background-repeat: no-repeat;
 }
 
-#site-description {
-  display: none;
+
+/******************************
+ * THINGS I'M HIDING         *
+******************************/
+
+
+#site-description { display: none; }  /* DESCRIPTION AND TITLE */
+#comments { display: none; }          /* COMMENTS */
+#search { display: none; }            /* SEARCH */
+#sidebar { display: none; }           /* SIDEBAR */
+.entry-title { display: none; }       /* ENTRY TITLE */
+
+#quick-contact {
+  width: 680px;
+  font-size: 11px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px;
+  background-color:#313638;
+  border-top:    1px #2c3133 solid;
+  border-bottom: 1px #2c3133 solid;
+}
+
+#quick-contact .addr  { margin-left: 10px; }
+#quick-contact .phone { margin-left: 10px; }
+#quick-contact .email { margin-left: 10px; }
+
+#quick-contact-shadow {
+  margin-top: 20px;
+  padding: 12px;
 }
 
 
-/* COMMENTS */
-#comments { display: none; }
-
-/* SEARCH */
-#search { display: none; }
-#sidebar { display: none; }
 
 
+
+
+
+
+/******************************
+ * RANDOM EFFECTS AND SHIT    * 
+******************************/
 
 
 /* custom image borders */
@@ -117,4 +143,16 @@ nav li a:hover {
     vertical-align: bottom;
     -webkit-border-radius: 3px;
             border-radius: 3px;
+}
+.radial-shadow {
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC42NSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvcmFkaWFsR3JhZGllbnQ+CiAgPHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 60%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0.65)), color-stop(60%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 60%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 60%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 60%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 60%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+
 }
