@@ -119,7 +119,18 @@ footer #copyright {
 }
 .pin-title {
     padding: 5px;
-
+    text-align: center;
+    position:absolute;
+    font-size: 20px;
+    width: 240px;
+    background: rgba(0,0,0, 0.6);
+    /*opacity: 0.6;*/
+    margin-left:3px;
+    margin-top:3px;
+    -webkit-border-top-right-radius: 3px;
+            border-top-right-radius: 3px;
+    -webkit-border-top-left-radius:  3px;
+            border-top-left-radius:  3px;
 }
 .pin-content {
     padding: 10px;
