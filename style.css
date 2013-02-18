@@ -56,7 +56,6 @@ body, html {
 
 #content {
   position: relative;
-  padding: 15px;
 }
 
 /* HEADER */
@@ -104,6 +103,26 @@ footer #copyright {
   font-size: 10px;
   width: 300px;
   margin: 0 auto;
+}
+
+
+/*****************************
+ * CATEGORY VIEWS            *
+******************************/
+.pin-col {
+    width: 33%;
+    float: left;
+    margin-right: 2px;
+}
+.pin-item {
+    padding: 0px;
+}
+.pin-title {
+    padding: 5px;
+
+}
+.pin-content {
+    padding: 10px;
 }
 
 
