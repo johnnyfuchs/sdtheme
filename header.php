@@ -13,7 +13,7 @@
   <script type="text/javascript" src="wp-content/themes/blankslate/scripts/jquery-1.7.min.js"></script>
   <script type="text/javascript" src="wp-content/themes/blankslate/scripts/slideshow.js"></script>
 
-  <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
   <!--[if gte IE 9]> <style type="text/css"> .radial-shadow { filter: none; } </style> <![endif]-->
   <?php wp_head(); ?>
 </head>

@@ -36,6 +36,7 @@ $(function(){
 
 function pinterest_layout(){
     var $pin_container = $('#pin-view');
+    var $little_pin    = $('#pin-mini-view');
     var cols = [0, 0, 0];
     var smallest = function( cols ) {
         var lowest = Number.MAX_VALUE;
@@ -52,11 +53,19 @@ function pinterest_layout(){
     for(i in cols){
         $pin_container.prepend('<div class="pin-col"></div>');
     }
-    $('.pin-item').each(function() {
+    $pin_container.find('.pin-item').each(function() {
         var $this = $(this);
-        $this.find('.pin-img img').removeAttr('height').attr('width', '250px');
+        $this.find('.pin-img img').removeAttr('height').attr('width', '248px');
         $this.append('<div class="clear"></div>');
-        $('.pin-col').eq(smallest(cols)).append($this);
+        $this.find('.pin-col').eq(smallest(cols)).append($this);
         cols[smallest(cols)] += $this.height();
+    });
+
+    $little_pin.prepend('<div class="pin-col"></div>');
+    $little_pin.find('.pin-item').each(function() {
+        var $this = $(this);
+        $this.find('.pin-img img').removeAttr('height').attr('width', '200px');
+        $this.append('<div class="clear"></div>');
+        $this.find('.pin-col').append($this);
     });
 }
