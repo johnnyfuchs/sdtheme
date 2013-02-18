@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<h1>Single</h1>
 <article id="content">
 <?php get_template_part( 'nav', 'above-single' ); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

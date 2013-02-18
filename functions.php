@@ -1,4 +1,96 @@
 <?php
+add_action( 'init', 'register_cpt_service' );
+function register_cpt_service() {
+
+    $labels = array( 
+        'name' => _x( 'Services', 'service' ),
+        'singular_name' => _x( 'Service', 'service' ),
+        'add_new' => _x( 'Add New Service', 'service' ),
+        'add_new_item' => _x( 'Add New Service', 'service' ),
+        'edit_item' => _x( 'Edit Service', 'service' ),
+        'new_item' => _x( 'New Service', 'service' ),
+        'view_item' => _x( 'View Service', 'service' ),
+        'search_items' => _x( 'Search Services', 'service' ),
+        'not_found' => _x( 'No services found', 'service' ),
+        'not_found_in_trash' => _x( 'No services found in Trash', 'service' ),
+        'parent_item_colon' => _x( 'Parent Service:', 'service' ),
+        'menu_name' => _x( 'Services', 'service' ),
+    );
+
+    $args = array( 
+        'labels' => $labels,
+        'hierarchical' => false,
+        'description' => 'Services offered by SD Consulting Group',
+        'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+        'taxonomies' => array( 'page-category' ),
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_position' => 5,
+        
+        'show_in_nav_menus' => true,
+        'publicly_queryable' => true,
+        'exclude_from_search' => false,
+        'has_archive' => true,
+        'query_var' => true,
+        'can_export' => true,
+        'rewrite' => true,
+        'capability_type' => 'post'
+    );
+
+    register_post_type( 'services', $args );
+}
+
+add_action( 'init', 'register_cpt_project' );
+function register_cpt_project() {
+
+    $labels = array( 
+        'name' => _x( 'projects', 'project' ),
+        'singular_name' => _x( 'project', 'project' ),
+        'add_new' => _x( 'Add New project', 'project' ),
+        'add_new_item' => _x( 'Add New project', 'project' ),
+        'edit_item' => _x( 'Edit project', 'project' ),
+        'new_item' => _x( 'New project', 'project' ),
+        'view_item' => _x( 'View project', 'project' ),
+        'search_items' => _x( 'Search projects', 'project' ),
+        'not_found' => _x( 'No projects found', 'project' ),
+        'not_found_in_trash' => _x( 'No projects found in Trash', 'project' ),
+        'parent_item_colon' => _x( 'Parent project:', 'project' ),
+        'menu_name' => _x( 'Projects', 'project' ),
+    );
+
+    $args = array( 
+        'labels' => $labels,
+        'hierarchical' => false,
+        'description' => 'Projects offered by SD Consulting Group',
+        'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+        'taxonomies' => array( 'page-category' ),
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_position' => 5,
+        
+        'show_in_nav_menus' => true,
+        'publicly_queryable' => true,
+        'exclude_from_search' => false,
+        'has_archive' => true,
+        'query_var' => true,
+        'can_export' => true,
+        'rewrite' => true,
+        'capability_type' => 'post'
+    );
+
+    register_post_type( 'projects', $args );
+}
+
+
+
+
+
+
+
+
+
 add_action('after_setup_theme', 'blankslate_setup');
 function blankslate_setup(){
 load_theme_textdomain('blankslate', get_template_directory() . '/languages');

@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<h1>Generic Archive</h1>
 <div id="content">
 <?php the_post(); ?>
 <?php if ( is_day() ) : ?>

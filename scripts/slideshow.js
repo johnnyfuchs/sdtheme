@@ -1,7 +1,7 @@
   $(function() {
       var ssSelector = '.slideshow';
-      var ssHeight   = 300;
-      var ssWidth    = 400;
+      var ssHeight   = $(ssSelector).css('height');
+      var ssWidth    = $(ssSelector).css('width');
 
       var nextSlide = function() {
           var $current = $(ssSelector+' img.active');
