@@ -34,6 +34,11 @@
         <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
       </nav>
     </div>
+    <div id="debuggggg"><?
+        $cat = get_categories();
+        var_dump( $cat );
+    ?>
+    </div>
     <div id="quick-contact-shadow" class="radial-shadow">
       <div id="quick-contact">
         <span class="corp"> SD Consulting Group, LLC </span>

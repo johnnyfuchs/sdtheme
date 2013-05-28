@@ -37,6 +37,7 @@ get_header();
 
   $list_of_posts = new WP_Query( $args ); 
   //print_r($list_of_posts->posts);
+  $i = 0;
 
   //blankslate_content_nav( 'nav-above' );
   while ( $list_of_posts->have_posts() ): $list_of_posts->the_post(); ?>
