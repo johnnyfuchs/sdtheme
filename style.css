@@ -13,13 +13,18 @@ License URI: https://www.gnu.org/licenses/gpl.html
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}
 
 
-/** 
+/********************** 
  * color pallet
  *
  * red:   #A9090B
  * brown: #290203
  * creme: #FEF5D4
- **/
+ *
+ * red2:  #ad212d
+ *
+ * background: rgb(35, 38, 39)
+ * grey: #CACACA
+ ***********************/
 
 
 /* DEFAULT COLORS STYLES */
@@ -39,6 +44,15 @@ body, html {
   min-height: 800px;
 }
 
+h1,h2,h3,h4,h5,h6 { display: block; font-weight: bold; padding-top: 10px; }
+
+h1 { font-size: 20px; color: #ad212d; }
+h2 { font-size: 18px; color: #ad212d; }
+h3 { font-size: 16px; color: #CACACA; }
+h4 { font-size: 14px; }
+
+address { font-style: italic;  }
+
 /* BODY/LAYOUT */
 
 #wrapper {
@@ -48,7 +62,7 @@ body, html {
   border-right: 2px #20293F solid;
   padding: 0 10px;
   overflow:hidden;
-  background-color:#313638;
+  background-color: rgb(35, 38, 39);
   -webkit-box-shadow:  0px 0px 20px 3px rgba(0, 0, 0, 1);
           box-shadow:  0px 0px 20px 3px rgba(0, 0, 0, 1);
   min-height: 800px;
@@ -83,6 +97,27 @@ nav li a {
 nav li a:hover { color: #fff; }
 
 
+/*****************************
+ * CONTACT INFO              *
+******************************/
+
+.contact {
+  font-family: 'Open Sans', sans-serif;
+  margin: 20px;
+}
+
+.contact .office {
+  font-weight: bold;
+  color: rgb(173, 33, 45);
+  font-size: 18px;
+}
+
+.contact .title { font-size: 16px; }
+.contact .name { font-size: 16px; }
+.contact .phone {}
+.contact .addr {}
+
+
 
 /*****************************
  * HOME PAGE                 *
@@ -93,7 +128,7 @@ nav li a:hover { color: #fff; }
  margin-top:10px;
  height:120px;
  overflow: hidden;
- background-image: url('images/logo.png');
+ background-image: url('images/logo800x120.png');
  background-repeat: no-repeat;
 }
 
@@ -168,7 +203,7 @@ footer #copyright {
   margin-left: auto;
   margin-right: auto;
   padding: 2px;
-  background-color:#313638;
+  background-color: rgb(35, 38, 39);
   border-top:    1px #2c3133 solid;
   border-bottom: 1px #2c3133 solid;
 }
