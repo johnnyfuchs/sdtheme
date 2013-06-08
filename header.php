@@ -6,6 +6,9 @@
 
   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
   <link href='wp-content/themes/blankslate/font/OpenSans.css' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100,300,700' rel='stylesheet' type='text/css'>
+
 
   <script type="text/javascript" src="wp-content/themes/blankslate/scripts/jquery-1.7.min.js"></script>
   <script type="text/javascript" src="wp-content/themes/blankslate/scripts/slideshow.js"></script>
@@ -35,13 +38,6 @@
         $cat = get_categories();
         var_dump( $cat );
     ?>
-    </div>
-    <div id="quick-contact-shadow" class="radial-shadow">
-      <div id="quick-contact">
-        <span> 769 Cherokee Avenue, Saint Paul, MN 55107 </span>
-        <span> 612.203.7366 </span>
-        <span> Shane.sparks@sd-consultinggroup.com </span>
-      </div>
     </div>
   </header>
   <div id="container">

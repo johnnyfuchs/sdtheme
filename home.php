@@ -51,7 +51,9 @@ get_header();
 
       <div class="pin"><!-- mini template -->
           <div class="title"><?php echo the_title() ?></div>
+        <a href="<?php echo the_permalink(); ?>">
           <div class="rounded-img"><?php echo get_the_post_thumbnail(); ?></div>
+        </a>
       </div><!-- end mini template -->
       
       <?php endwhile; ?>

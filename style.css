@@ -38,13 +38,18 @@ body, html {
   background-image: url('images/brownforest.png');
   color: #eee;
   line-height: 19px;
+  /*
+  font-family: 'Roboto Slab', serif;
   font-family: 'Open Sans', serif;
+  */
+  font-family: 'Source Sans Pro', serif;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 200;
   min-height: 800px;
+  word-spacing: 3px;
 }
 
-h1,h2,h3,h4,h5,h6 { display: block; font-weight: bold; margin-top: 10px; }
+h1,h2,h3,h4,h5,h6 { display: block; font-weight: 700; margin-top: 10px; }
 
 h1 { padding: 2px; font-size: 20px; color: #ad212d; }
 h2 { padding: 2px; font-size: 18px; color: #ad212d; }
@@ -55,7 +60,7 @@ address { font-style: italic; font-weight: normal; }
 /* BODY/LAYOUT */
 
 #wrapper {
-  width: 800px;
+  width: 900px;
   margin: 0 auto;
   border-left:  2px #20293F solid;
   border-right: 2px #20293F solid;
@@ -69,12 +74,13 @@ address { font-style: italic; font-weight: normal; }
 
 #content {
   position: relative;
+  margin-top: 10px;
 }
 
 /* HEADER */
 
 nav {
-  margin: 80px  0px 0px 350px ;
+  margin: 80px  0px 0px 240px ;
 }
 
 nav ul li {
@@ -123,6 +129,7 @@ nav li a:hover { color: #fff; }
 ******************************/
 
 #gohome {
+  cursor: pointer;
   position: absolute;
   width: 270px;
   height: 120px;
@@ -145,21 +152,21 @@ h2.home-right-title {
 }
 
 .home-body {
-  width: 270px;
+  width: 300px;
   float: left;
-  margin-bottom: 20px;
-  padding: 15px;
+  padding: 3px;
+  line-height: 23px;
 }
 
 .home-slideshow {
   float: left;
-  width: 520px
-  margin-bottom: 20px;
+  width: 580px
 }
 
+#pin-view,
 #pin-mini-view {
     margin-top: 20px;
-    width: 100%;
+    width: 895px;
 }
 
 
@@ -201,7 +208,7 @@ footer #copyright {
 .pin-big .content,
 .pin .content {
   text-align: center;
-  font-size: 85%;
+  font-size: 105%;
   padding: 2px;
   color: #bcc99d;
 }
@@ -243,6 +250,27 @@ footer #copyright {
 .slideshow img { position:absolute; top:0; left:0; z-index:8; opacity:0.0; }
 .slideshow img.active { z-index:10; opacity:1.0; } 
 .slideshow img.prev-active { z-index:9; } 
+
+
+/********************************
+ * SINGLE CATEGORY/SERVICE VIEW *
+*********************************/
+
+.entry-content {
+
+}
+.entry-thumbnail {
+
+}
+.entry-body {
+  line-height: 23px;
+}
+
+
+
+
+
+
 
 
 /******************************

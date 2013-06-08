@@ -2,11 +2,11 @@
  * Kick off pinterest layout and slideshow
  */
 $(function(){
-  var p1 = new PinLayout( '.pin', 4, 20 ); p1.run();
+  var p1 = new PinLayout( '.pin', 4, 25 ); p1.run();
   var p2 = new PinLayout( '.pin-big', 3, 25 ); p2.run();
 
-  start_slideshow( 200, 494 );
-  $(document.body).on('click', '#gohome', function(){ window.location = '/'; });
+  start_slideshow( 250, 550 );
+  $(document.body).on('click', '#gohome', function(){ window.location = '/wordpress'; });
 });
 
 
