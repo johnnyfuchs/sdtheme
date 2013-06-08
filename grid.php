@@ -32,14 +32,20 @@
   $list_of_posts = new WP_Query( $gridQuery ); 
   $i = 0;
 
-  while ( $list_of_posts->have_posts() ): $list_of_posts->the_post(); ?>
+  while ( $list_of_posts->have_posts() ):
+    $list_of_posts->the_post();
+    $custom_fields = get_post_custom();
+    $brief = isset($custom_fields['brief'][0]) ? $custom_fields['brief'][0] : '';
+  ?>
 
   <!-- mini template -->
 
-    <div class="pin-item">
-        <div class="pin-title"><?php echo the_title() ?></div>
-        <div class="pin-img rounded-img"><?php echo get_the_post_thumbnail(); ?></div>
-        <div class="pin-content"><?php echo the_content() ?></div>
+    <div class="pin-big">
+        <div class="title"><?php echo the_title() ?></div>
+        <a href="<?php echo the_permalink(); ?>">
+            <div class="img rounded-img"><?php echo get_the_post_thumbnail(); ?></div>
+        </a>
+        <div class="content"><?php echo $brief; ?></div>
     </div>
 
   <!-- end mini template -->

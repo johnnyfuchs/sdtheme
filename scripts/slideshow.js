@@ -3,13 +3,10 @@
  */
 $(function(){
   var p1 = new PinLayout( '.pin', 4, 20 ); p1.run();
-
-  // adjust pin title to fix the rounded corner effect
-  var $pt = $('.pin .title');
-  $pt.width( $pt.width() - 10 );
-
+  var p2 = new PinLayout( '.pin-big', 3, 25 ); p2.run();
 
   start_slideshow( 200, 494 );
+  $(document.body).on('click', '#gohome', function(){ window.location = '/'; });
 });
 
 
@@ -80,6 +77,13 @@ var PinLayout = function( pinSelector, columns, margin ){
 PinLayout.prototype.run = function(){
   this.prepareColumns();
   this.movePins();
+  this.fixTitleWidth();
+}
+
+PinLayout.prototype.fixTitleWidth = function(){
+  // adjust pin title to fix the rounded corner effect
+  var $pt = $(this.pinSelector + ' .title');
+  $pt.width( $pt.width() - 10 );
 }
 
 PinLayout.prototype.getSmallestColumn = function(){

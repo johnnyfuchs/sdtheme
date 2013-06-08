@@ -4,16 +4,12 @@
   <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
   <title><?php wp_title(' | ', true, 'right'); ?></title>
 
-  <!--
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-  -->
-
   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
+  <link href='wp-content/themes/blankslate/font/OpenSans.css' rel='stylesheet' type='text/css'>
 
   <script type="text/javascript" src="wp-content/themes/blankslate/scripts/jquery-1.7.min.js"></script>
   <script type="text/javascript" src="wp-content/themes/blankslate/scripts/slideshow.js"></script>
 
-  <link href='wp-content/themes/blankslate/font/OpenSans.css' rel='stylesheet' type='text/css'>
   <!--[if gte IE 9]> <style type="text/css"> .radial-shadow { filter: none; } </style> <![endif]-->
   <?php wp_head(); ?>
 </head>
@@ -21,6 +17,7 @@
 <div id="wrapper" class="hfeed">
   <header>
     <div id="branding">
+      <div id="gohome"></div>
       <div id="site-title">
         <?php if ( is_singular() ) {} else {echo '<h1>';} ?>
         <a href="<?php echo home_url() ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a>
@@ -41,10 +38,9 @@
     </div>
     <div id="quick-contact-shadow" class="radial-shadow">
       <div id="quick-contact">
-        <span class="corp"> SD Consulting Group, LLC </span>
-        <span class="addr"> 769 Cherokee Avenue, Saint Paul, MN 55107 </span>
-        <span class="phone"> 612.203.7366 </span>
-        <span class="email"> Shane.sparks@sd-consultinggroup.com </span>
+        <span> 769 Cherokee Avenue, Saint Paul, MN 55107 </span>
+        <span> 612.203.7366 </span>
+        <span> Shane.sparks@sd-consultinggroup.com </span>
       </div>
     </div>
   </header>
