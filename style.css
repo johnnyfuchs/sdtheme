@@ -31,13 +31,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 body, html {
   /*
   background-image: url('images/gravy.png');
-  */
-  /*
   background-image: url('images/greytxture.png');
   */
   background-image: url('images/brownforest.png');
+  background-image: url('images/darkbrownforest.png');
   color: #eee;
-  line-height: 19px;
+  line-height: 20px;
   /*
   font-family: 'Roboto Slab', serif;
   font-family: 'Open Sans', serif;
@@ -62,8 +61,8 @@ address { font-style: italic; font-weight: normal; }
 #wrapper {
   width: 900px;
   margin: 0 auto;
-  border-left:  2px #20293F solid;
-  border-right: 2px #20293F solid;
+  border-left:  2px rgb(34, 46, 6) solid;
+  border-right: 2px rgb(34, 46, 6) solid;
   padding: 0 10px;
   overflow:hidden;
   background-color: rgb(35, 38, 39);
@@ -93,13 +92,28 @@ nav li a:visited,
 nav li a {
   text-decoration: none;
   font-size: 18px;
-  color: #ccc;
+  color: #bcc99d;
   font-weight: 400;
   color: rgb(173, 33, 45);
   text-shadow: 1px 1px 1px #000;
        filter: dropshadow(color=#000, offx=1, offy=1);
 }
-nav li a:hover { color: #fff; }
+
+nav li a:hover {
+  color: #fff;
+}
+
+
+
+a {
+  font-weight: 300;
+  color: #bcc99d;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(89, 114, 30);
+}
 
 
 /*****************************
@@ -152,15 +166,23 @@ h2.home-right-title {
 }
 
 .home-body {
-  width: 300px;
-  float: left;
-  padding: 3px;
+  position:absolute;
+  z-index: 100;
+  left: 600px;
+  top: 3px;
+  background: rgba(0,0,0, 0.6);
+  width: 258px;
+  height: 210px;
+  padding: 20px;
   line-height: 23px;
 }
 
 .home-slideshow {
   float: left;
+/*
   width: 580px
+*/
+  width: 895px;
 }
 
 #pin-view,
@@ -225,7 +247,7 @@ footer #copyright {
 .entry-title { display: none; }       /* ENTRY TITLE */
 
 #quick-contact {
-  width: 700px;
+  width: 800px;
   font-size: 12px;
   font-weight: 300;
   margin-left: auto;
@@ -234,6 +256,7 @@ footer #copyright {
   background-color: rgb(35, 38, 39);
   border-top:    1px #2c3133 solid;
   border-bottom: 1px #2c3133 solid;
+  text-align: center;
 }
 
 #quick-contact span { margin-left: 35px; }
@@ -257,18 +280,27 @@ footer #copyright {
 *********************************/
 
 .entry-content {
-
+  margin: 20px 0px;
+  float: left;
 }
+
 .entry-thumbnail {
-
+  float: right;
+  margin: 0px 20px;
 }
+
 .entry-body {
   line-height: 23px;
 }
 
+.nav-next,
+.nav-previous {
+  text-align: center;
+  font-size: 16px;
+}
 
-
-
+.nav-next { width: 50%; float: left;}
+.nav-previous { width: 50%; float: right;}
 
 
 

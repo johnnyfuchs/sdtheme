@@ -5,7 +5,7 @@ $(function(){
   var p1 = new PinLayout( '.pin', 4, 25 ); p1.run();
   var p2 = new PinLayout( '.pin-big', 3, 25 ); p2.run();
 
-  start_slideshow( 250, 550 );
+  start_slideshow( 250, 895 );
   $(document.body).on('click', '#gohome', function(){ window.location = '/wordpress'; });
 });
 
