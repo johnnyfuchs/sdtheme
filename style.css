@@ -37,21 +37,20 @@ body, html {
   */
   background-image: url('images/brownforest.png');
   color: #eee;
-  line-height: 17px;
+  line-height: 19px;
   font-family: 'Open Sans', serif;
   font-size: 14px;
   font-weight: 400;
   min-height: 800px;
 }
 
-h1,h2,h3,h4,h5,h6 { display: block; font-weight: bold; padding-top: 10px; }
+h1,h2,h3,h4,h5,h6 { display: block; font-weight: bold; margin-top: 10px; }
 
-h1 { font-size: 20px; color: #ad212d; }
-h2 { font-size: 18px; color: #ad212d; }
-h3 { font-size: 16px; color: #CACACA; }
-h4 { font-size: 14px; }
-
-address { font-style: italic;  }
+h1 { padding: 2px; font-size: 20px; color: #ad212d; }
+h2 { padding: 2px; font-size: 18px; color: #ad212d; }
+h3 { padding: 2px; font-size: 16px; color: #CACACA; }
+h4 { padding: 2px; font-size: 14px; }
+address { font-style: italic; font-weight: normal; }
 
 /* BODY/LAYOUT */
 
@@ -140,9 +139,10 @@ h2.home-right-title {
 }
 
 .home-body {
-  width: 280px;
+  width: 270px;
   float: left;
   margin-bottom: 20px;
+  padding: 15px;
 }
 
 .home-slideshow {
@@ -152,6 +152,7 @@ h2.home-right-title {
 }
 
 #pin-mini-view {
+    margin-top: 20px;
     width: 100%;
 }
 

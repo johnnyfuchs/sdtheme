@@ -1,9 +1,9 @@
 <?php
 /*
-Template Name: Service List
+Template Name: Project List
 */
 
-$post_type = 'services';
+$post_type = 'projects';
 
 $gridQuery=array(
   'post_type' => $post_type,
